@@ -89,8 +89,5 @@ public class Project01_KalkulatorNilaiMahasiswa {
 		System.out.println("Total Nilai: " + nilaiTertinggi);
 		System.out.printf("Rata-Rata: %.2f\n", rataRataTerbaik);
 
-		
-		
-		
 	}
 }
