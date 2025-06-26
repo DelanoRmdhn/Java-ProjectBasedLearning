@@ -65,6 +65,32 @@ public class Project01_KalkulatorNilaiMahasiswa {
 		    System.out.printf("%-15d%-15.2f\n", totalNilai, rataRata);
 		}
 
+		//Mencari Mahasiswa dengan nilai terbaik
+		int nilaiTertinggi = 0;
+		String mahasiswaTerbaik = "";
+
+		for (int i = 0; i < nilaiMahasiswa.length; i++) {
+		    int totalNilai = 0;
+
+		    for (int j = 0; j < nilaiMahasiswa[i].length; j++) {
+		        totalNilai += nilaiMahasiswa[i][j];
+		    }
+
+		    if (totalNilai > nilaiTertinggi) {
+		        nilaiTertinggi = totalNilai;
+		        mahasiswaTerbaik = mahasiswa[i];
+		    }
+		}
+
+		double rataRataTerbaik = (double) nilaiTertinggi / namaMatakuliah.length;
+
+		System.out.println("\n🏆 Mahasiswa dengan Nilai Tertinggi:");
+		System.out.println("Nama: " + mahasiswaTerbaik);
+		System.out.println("Total Nilai: " + nilaiTertinggi);
+		System.out.printf("Rata-Rata: %.2f\n", rataRataTerbaik);
+
+		
+		
 		
 	}
 }
