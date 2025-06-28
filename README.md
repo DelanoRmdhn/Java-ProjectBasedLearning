@@ -63,4 +63,39 @@ Simulasi sistem manajemen perpustakaan berbasis console menggunakan Java. Penggu
 #### 🛠 Catatan:
 > Fitur "Tambah Buku Baru" **belum diimplementasikan** agar fokus tetap pada manajemen data yang sudah tersedia.
 
+---
+
+### **03. 🏥 Project Sistem Manajemen Data Pasien Klinik**
+
+#### 🧾 Deskripsi Proyek:
+Simulasi sistem pencatatan data pasien di sebuah klinik berbasis console menggunakan Java. Setiap pasien memiliki data nama, jenis kelamin, keluhan, dan usia. Data pasien disimpan dalam bentuk **array of object** menggunakan class `Pasien`.
+
+#### ✨ Fitur-Fitur Utama:
+- 🧍 Menyimpan data beberapa pasien menggunakan class dan object  
+- 📋 Menampilkan informasi lengkap setiap pasien  
+- 🧮 Menampilkan jumlah total pasien yang tercatat  
+- 🖨 Output ditampilkan dengan format rapi menggunakan `System.out.println()`
+
+#### 🎯 Tujuan Pembelajaran:
+- ✅ Memahami dan mengimplementasikan **class**, **constructor**, dan **object**  
+- ✅ Menerapkan konsep **array of object** dalam studi kasus nyata  
+- ✅ Melatih pemanggilan **method** di dalam loop  
+- ✅ Menggunakan keyword `this` untuk membedakan parameter dan atribut  
+- ✅ Menyusun program OOP sederhana dari nol  
+
+#### 🧩 Konsep OOP yang Digunakan:
+- 🏷 **Class**: Mendefinisikan struktur data pasien dengan atribut dan method  
+- 🧱 **Constructor**: Untuk menginisialisasi objek `Pasien` saat dibuat  
+- ⚙️ **Method (Function)**: Menampilkan informasi pasien lewat `tampilkanInfo()`  
+- 👤 **Object**: Mewakili tiap pasien sebagai instance dari class `Pasien`  
+- 📦 **Array of Object**: Menyimpan banyak objek `Pasien` dalam satu array  
+- 🔄 **Keyword `this`**: Digunakan untuk membedakan antara atribut dan parameter dalam constructor
+
+#### 🧑‍💻 Bahasa Pemrograman:
+- Java (menggunakan dasar-dasar OOP: class, object, method, constructor)
+
+#### 🛠 Catatan:
+> Fitur interaktif seperti input pasien dari pengguna, pencarian pasien, dan penyimpanan ke file **belum diimplementasikan** agar fokus tetap pada pemahaman konsep OOP dasar terlebih dahulu.
+
+
 
