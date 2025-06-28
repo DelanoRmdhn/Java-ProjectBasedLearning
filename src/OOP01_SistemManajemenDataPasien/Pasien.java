@@ -1,5 +1,7 @@
 package OOP01_SistemManajemenDataPasien;
 
+
+
 public class Pasien {
 	String nama,jenisKelamin,keluhan;
 	int usia;
