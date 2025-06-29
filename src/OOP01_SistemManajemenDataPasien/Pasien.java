@@ -14,7 +14,7 @@ public class Pasien {
 	}
 	
 	void tampilkanInfo() {
-		System.out.println("Nama \t\t\t:" + nama + "\n"
+		System.out.println("\nNama \t\t\t:" + nama + "\n"
 						 + "Usia \t\t\t:" + usia + "\n"
 						 + "Jenis Kelamin \t\t:" + jenisKelamin + "\n"
 						 + "Keluhan \t\t:" + keluhan);
