@@ -81,6 +81,30 @@ Simulasi sistem pencatatan data pasien di sebuah klinik berbasis console menggun
 
 ---
 
+## 🎯 Tujuan Pembelajaran
+
+- ✅ **Memahami dan mengimplementasikan** `class`, `constructor`, dan `object`  
+- ✅ **Menerapkan konsep** `array of object` dalam studi kasus nyata  
+- ✅ **Melatih pemanggilan** `method` di dalam `loop`  
+- ✅ **Menggunakan keyword** `this` untuk membedakan parameter dan atribut  
+- ✅ **Menyusun program OOP sederhana dari nol**
+
+---
+
+## 🧩 Konsep OOP yang Digunakan
+
+- 🏷 **Class**: Mendefinisikan struktur data pasien dengan atribut dan method  
+- 🧱 **Constructor**: Untuk menginisialisasi objek `Pasien` saat dibuat  
+- ⚙️ **Method (Function)**: Menampilkan dan memperbarui informasi pasien  
+- 👤 **Object**: Mewakili tiap pasien sebagai instance dari class `Pasien`  
+- 📦 **Array of Object**: Menyimpan banyak objek `Pasien` dalam satu array  
+- 🔄 **Keyword `this`**: Digunakan untuk membedakan antara atribut dan parameter
+
+## 🧑‍💻 Bahasa Pemrograman
+
+- **Java** (menggunakan dasar-dasar OOP: `class`, `object`, `method`, `constructor`)
+---
+
 #### 📁 Struktur Kelas:
 ```text
 📦 OOP01_SistemManajemenDataPasien
