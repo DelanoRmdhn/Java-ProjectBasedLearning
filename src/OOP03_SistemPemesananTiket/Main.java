@@ -27,7 +27,16 @@ public class Main {
 		//Array JadwalTayang
 		JadwalTayang[] daftarJamTayang = {jt1,jt2,jt3};
 		
+		//Array Pemesanan
+		Pemesanan[] daftarPemesanan = new Pemesanan[10];
+		int totalPemesananTiket = 0;
 		
+		//Array Kursi
+		int[] kursiReguler = {101,102,103,104,105};
+		int[] kursiVip = {201,202,203,204,205};
+		
+		
+
 		do {
 			System.out.println("\n==================== 🎟 SISTEM PEMESANAN TIKET BIOSKOP ====================\n");
 			System.out.println("1. ➕ Registrasi Pengunjung\n"
@@ -79,6 +88,68 @@ public class Main {
 				
 				System.out.println("📃 Masukan Nama film yang ingin ditonton: \n");
 				String pilihFilm = input.nextLine();
+				
+				if(pilihFilm.equalsIgnoreCase("Interstellar")) {
+					
+					//Pemilihan Kursi
+					System.out.println("💺 Pilih Jenis Kursi (Kursi Reguler/VIP): ");
+					String pilihKursi = input.nextLine();
+					
+					if(pilihKursi.equalsIgnoreCase("Reguler")) {
+						
+						KursiReguler kReguler = new KursiReguler(kursiReguler);
+						kReguler.tampilkan();
+						
+						System.out.println("\n👫 Jumlah Kursi yang ingin dipesan: ");
+						int jumlahKursi = input.nextInt();
+						
+						int pilihNomor;
+						for(int i = 1; i <= jumlahKursi; i++) {
+							System.out.println("\n🔢 Masukan Nomor Kursi " + i +": ");
+							pilihNomor = input.nextInt();
+							 
+							if(pilihNomor > 100 && pilihNomor < 106) {
+								System.out.println("\n✅ Berhasil memesan kursi nomor " + pilihNomor);
+							}else{
+								System.out.println("\n❌ Pilih nomor yang tersedia.");
+								break;
+							}					
+						}
+						
+						daftarPemesanan[totalPemesananTiket] = new Pemesanan(daftarPenonton[totalPenonton-1],f1,jt1,kReguler,jumlahKursi);
+						daftarPemesanan[totalPemesananTiket].tampilkan();
+						totalPemesananTiket++;
+						
+					} else if(pilihKursi.equalsIgnoreCase("VIP")) {
+						
+						KursiVIP kVip= new KursiVIP(kursiVip);
+						kVip.tampilkan();
+						
+						System.out.println("\n👫 Jumlah Kursi yang ingin dipesan: ");
+						int jumlahKursi = input.nextInt();
+						
+						int pilihNomor;
+						for(int i = 1; i <= jumlahKursi; i++) {
+							System.out.println("\n🔢 Masukan Nomor Kursi " + (i+1) +": ");
+							pilihNomor = input.nextInt();
+							 
+							if(pilihNomor > 200 && pilihNomor < 206) {
+								System.out.println("\n✅ Berhasil memesan kursi nomor " + pilihNomor);
+							}else{
+								System.out.println("\n❌ Pilih nomor yang tersedia.");
+								break;
+							}
+						}	
+					}
+				} 
+				
+//				else if(pilihFilm.equalsIgnoreCase("Oppenheimer")) {
+//					daftarPemesanan[totalPemesananTiket] = new Pemesanan(f2,jt2);
+//				} else if(pilihFilm.equalsIgnoreCase("Iron Man 3")) {
+//					daftarPemesanan[totalPemesananTiket] = new Pemesanan(f3,jt3);
+//				} else {
+//					System.out.println("❌ Tidak ada Film dengan nama " + pilihFilm + ".");
+//				}
 				
 				break;
 				

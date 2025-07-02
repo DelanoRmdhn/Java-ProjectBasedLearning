@@ -9,7 +9,7 @@ public class Film {
 	}
 	
 	void tampilkanFilm() {
-		System.out.println("🎬 Judul Film: " + judul + "\n📃 Genre: " + genre);
-		System.out.println("");
+		System.out.println("🎬 Judul Film: " + judul + "\n📃 Genre: " + genre + "\n");
+		
 	}
 }

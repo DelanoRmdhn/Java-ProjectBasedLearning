@@ -10,7 +10,8 @@ public class JadwalTayang {
 	}
 	
 	void tampilkanJadwal() {
-		System.out.println("Film: " + film.judul + " - Jam Tayang: " + waktu);
+		film.tampilkanFilm();
+		System.out.println("\nJam Tayang: " + waktu + "\n");
 	}
 	
 	

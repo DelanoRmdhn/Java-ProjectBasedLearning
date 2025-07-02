@@ -7,4 +7,8 @@ public class Penonton {
 		this.nama = nama;
 		this.noHp = noHp;
 	}
+	
+	void tampilkan() {
+		System.out.println("👤 Nama: " + nama + "\n📱 No Hp: " + noHp + "\n");
+	}
 }
