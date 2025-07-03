@@ -131,4 +131,34 @@ Proyek ini memungkinkan pencatatan data pelanggan dan pemesanan kamar berdasarka
 #### 🧑‍💻 Bahasa Pemrograman
 - Java (OOP – menggunakan konsep inheritance, dependency injection, array of object)
 
-#### 🖨 Contoh Output
+---
+
+
+### **05. 🎟️ Project Sistem Pemesanan Tiket Bioskop**
+
+#### 🧾 Deskripsi Proyek
+Sistem pemesanan tiket bioskop berbasis console yang memungkinkan pengguna melakukan registrasi, memilih film, menentukan jadwal tayang, memilih jenis kursi, dan melakukan pemesanan tiket. Sistem ini menerapkan berbagai konsep relasi antar class dalam OOP serta penggunaan array of object.
+
+#### ✨ Fitur-Fitur Utama
+- 👤 Registrasi pengguna sebelum memesan tiket  
+- 🎬 Menampilkan daftar film dan jadwal tayang  
+- 💺 Memilih jenis kursi (Reguler atau VIP) dan nomor kursi  
+- 🧾 Melakukan pemesanan tiket dengan informasi lengkap  
+- 📋 Menyimpan dan menampilkan riwayat pemesanan
+
+#### 🎯 Tujuan Pembelajaran
+- ✅ Memahami relasi antar class: `association`, `aggregation`, dan `dependency`  
+- ✅ Menerapkan inheritance pada class `KursiReguler` dan `KursiVIP` dari `Kursi`  
+- ✅ Mengelola data menggunakan `array of object`  
+- ✅ Membuat alur interaktif untuk pengguna dalam sistem berbasis teks  
+- ✅ Memahami pentingnya modularisasi dengan method terpisah untuk setiap proses
+
+#### 🧩 Konsep OOP yang Digunakan
+- 🧬 Inheritance: `KursiReguler` dan `KursiVIP` merupakan turunan dari class `Kursi`  
+- 🧱 Association: `Pemesanan` memiliki relasi dengan `Penonton`, `Film`, `JadwalTayang`, dan `Kursi`  
+- 🧪 Dependency: `Pemesanan` menerima objek lain sebagai parameter di constructor (tanpa menyimpan beberapa relasi secara permanen di class tertentu)  
+- 📦 Array of Object: digunakan untuk menyimpan daftar penonton dan pemesanan  
+- 🔄 Method Modular: proses seperti pemilihan kursi dan input user dipisahkan ke method terstruktur
+
+#### 🧑‍💻 Bahasa Pemrograman
+- Java (OOP – menggunakan konsep inheritance, aggregation, dependency, array of object)
